@@ -81,11 +81,12 @@ public class BookIndexer61675 implements IBookIndexer{
 		    			currentLine += ", " + page;
 		    			lastPageNumber = page;
 		    		}
-		    		if(flag)
-		    		{
-		    			currentLine+= "-" + lastPageNumber;	
-		    		}
 				}
+
+	    		if(flag)
+	    		{
+	    			currentLine+= "-" + lastPageNumber;	
+	    		}
 		    	writer.write(currentLine);
 		    	writer.newLine();
 			}
