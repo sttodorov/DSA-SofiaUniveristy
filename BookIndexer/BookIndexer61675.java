@@ -61,7 +61,7 @@ public class BookIndexer61675 implements IBookIndexer{
 		    	boolean flag = false;
 				if(currentWordPages.size() > 0)
 				{
-					writer.write(keyword );
+					writer.write(keyword);
 				}
 		    	for (Integer page : currentWordPages) {
 		    		if(lastPageNumber == page-1)
@@ -87,8 +87,11 @@ public class BookIndexer61675 implements IBookIndexer{
 	    		{
 	    			currentLine+= "-" + lastPageNumber;	
 	    		}
-		    	writer.write(currentLine);
-		    	writer.newLine();
+	    		if(currentLine!= "")
+	    		{
+			    	writer.write(currentLine);
+			    	writer.newLine();
+	    		}
 			}
 		    
 		    writer.close();
