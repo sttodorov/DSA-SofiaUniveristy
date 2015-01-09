@@ -12,13 +12,13 @@ import java.util.Scanner;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-public class BookIndexer implements IBookIndexer{
+public class BookIndexer61675 implements IBookIndexer{
 	
 	final static Charset ENCODING = StandardCharsets.UTF_8;
 	private ArrayList<SuffixTrie> tries;
 	private HashMap<String, SortedSet<Integer>> wordsPages;
 	
-	public BookIndexer()
+	public BookIndexer61675()
 	{
 		this.tries = new ArrayList<SuffixTrie>();
 		this.wordsPages = new HashMap<String, SortedSet<Integer>>();
